@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEBELE CHAT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Test -->
+  
+    <div class="container">
+        <div class="login">
+            <span>Lütfen giriş yapınız!</span>
+            <input type="text" id="myname" placeholder="Kullanıcı adınız." autocomplete="off">
+            <button onclick="sohbeteBasla();"><i class="fa-solid fa-user"></i> Login</button>
+        </div>
+        <h2>C H A T</h2>
+        <ul id="messages" class="messages">
+            <li class="message">
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sequi minima illo modi, quos nostrum!</p>
+                <span class="sender">USER1 | @user123</span>
+                <span class="date">12:00</span>
+            </li>
+
+            <li class="message my">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quo.</p>
+                <span class="date">12:00</span>
+            </li>
+        </ul>
+        <div class="input">
+            <input type="text" id="myInput">
+            <button onclick="msgGonder();" id="saveData"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+    </div>
+    <!---------- sonra app.js'e al ------------>
+
+    
+
+
+    <!-------------------------------------------------------------------------------------------------------->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/database.js"></script>
+   <script src="script.js"></script>
+
+    <!-- firebase sonra gizle -->
+   
+</body>
+</html>
