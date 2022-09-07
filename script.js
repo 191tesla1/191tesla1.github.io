@@ -11,7 +11,7 @@ function init() {
     };
     firebase.initializeApp(firebaseConfig);
     // Initialize Firebase
-    ref = firebase.database().ref("messages");
+    ref = firebase.database().ref("messagess");
 
 
     firebase.database().ref("messagess").on("child_added", (snapshot) => {
