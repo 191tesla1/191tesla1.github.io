@@ -14,7 +14,7 @@ function init() {
     ref = firebase.database().ref("messages");
 
 
-    firebase.database().ref("messages").on("child_added", (snapshot) => {
+    firebase.database().ref("messagess").on("child_added", (snapshot) => {
         console.log(snapshot.val().message);
         var html = '';
         if (snapshot.val().sender == myName) {
